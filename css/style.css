@@ -1,0 +1,99 @@
+.hidden {
+  display: none;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.footer {
+  bottom: 0px;
+  width: 100%;
+  position: relative;
+  margin-top: -5px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  padding-bottom:20px; /* this needs to be bigger than footer height*/
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.pseud-entry input[type="pseud"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.pseud-entry {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+  margin: auto;
+}
+
+.pseud-entry .checkbox {
+  font-weight: 400;
+}
+
+.pseud-entry .form-control {
+  /* position: relative;
+  box-sizing: border-box;
+  height: auto; */
+  padding: 0;
+  font-size: 16px;
+}
+
+.pseud-entry .form-control:focus {
+  z-index: 2;
+}
+
+.sticky-top {
+  background: white;
+}
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 0.9em;
+  height: 0.9em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.grayed {
+	opacity: 0.5;
+}
